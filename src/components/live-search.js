@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SearchInput from './search-input';
+import SearchForm from './search-form';
 import CharacterList from './character-list';
 
 export default class LiveSearch extends React.Component {
@@ -19,7 +19,7 @@ export default class LiveSearch extends React.Component {
         );
         return (
             <div className="live-search">
-                <SearchInput onChange={searchTerm => this.setState({searchTerm})} />
+                <SearchForm onChange={searchTerm => this.setState({searchTerm})} />
                 <CharacterList characters={characters} />
             </div>
         );
