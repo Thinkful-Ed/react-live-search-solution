@@ -8,10 +8,8 @@ export default function SearchForm(props) {
             <label htmlFor="search">Search</label>&emsp;
             <input type="search" id="search" name="search" placeholder="Dale Cooper" 
                 onChange={e => props.onChange(e.target.value)} />&emsp;
-            <span className="results-count" 
-                aria-live="assertive" 
-                aria-atomic="true">
-                    {countText}
+            <span className="results-count" aria-live="assertive">
+                {countText}
               </span>
         </form>
     );
