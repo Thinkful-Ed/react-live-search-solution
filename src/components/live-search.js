@@ -2,6 +2,8 @@ import React from 'react';
 
 import SearchForm from './search-form';
 import CharacterList from './character-list';
+import CharacterCount from './character-count';
+
 
 export default class LiveSearch extends React.Component {
     constructor(props) {
@@ -20,6 +22,7 @@ export default class LiveSearch extends React.Component {
         return (
             <div className="live-search">
                 <SearchForm onChange={searchTerm => this.setState({searchTerm})} />
+                <CharacterCount count={characters.length} />
                 <CharacterList characters={characters} />
             </div>
         );
