@@ -1,8 +1,8 @@
 import React from 'react';
 
 import SearchForm from './search-form';
-import CharacterList from './character-list';
 import CharacterCount from './character-count';
+import CharacterList from './character-list';
 
 
 export default class LiveSearch extends React.Component {
